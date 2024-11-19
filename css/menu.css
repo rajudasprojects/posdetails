@@ -1,0 +1,417 @@
+.navbar {
+	display: flex;
+	position: sticky;
+	align-items: center;
+	justify-content: space-between;
+	top: 0px;
+	background-color:#0974c1;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	font-family: arial, sans-serif;
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+	margin-right: 50px;
+}
+
+.nav-list li {
+	margin-right: 20px;
+	
+}
+
+.nav-list li:last-child {
+	margin-right: 0;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+	color: #ffd700;
+	/* Change the color on hover */
+}
+
+.rightNav {
+	text-align: right;
+}
+
+#search {
+	padding: 8px;
+	font-size: 16px;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+
+.btn {
+	background-color: #ffd700;
+	color: #000;
+	border: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background-color: #000;
+	/* Change the background color on hover */
+	color: #ffd700;
+}
+
+
+/*----- TABLE--------*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+ 
+  margin: auto;
+  float:center;
+}
+
+td, th {
+  text-align: left;
+  border: 1px solid #caced1;
+  padding: 10px 20px 8px 5px;
+  margin-top:25px;
+}
+
+#th-bg {
+  background-color: #0974c1;
+  border: 1px solid #caced1;
+}
+
+.tr-br { 
+	border: solid thin #065ead;
+}
+td input{
+  appearance: none;
+  width: 65%;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+td input[type="radio" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+	width:20px;
+    box-sizing: border-box;
+    margin: 3px 3px 0px 5px;
+    padding: initial;
+    border: initial;
+}
+th h3{
+	text-align:center;
+}
+.button {
+  background-color: #0974c1;
+  border: none;
+  color: white;
+  padding: 13px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px 4px 48px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button1 {
+  background-color: #0974c1;
+  width:90px;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: -22px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+label{
+	font-family: arial, sans-serif;
+	font-weight:5px solid black;
+}
+.search {
+	flex-grow: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right:150px;
+}
+
+.search input[type="text"] {
+	padding: 6px;
+	margin-right: 10px;
+	border: none;
+	font-size: 17px;
+	border-radius: 4px;
+	border: 2px solid black;
+}
+
+.search button {
+	padding: 6px 10px;
+	background: #0974c1;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.search button i {
+	font-size: 18px;
+}
+
+.search button:hover {
+	background: darkgreen;
+	color: white;
+}
+
+.alert {
+  padding: 10px;
+  background-color: #07970d;
+  color: white;
+  width:50%;
+  margin: auto;
+  float:center;	
+  font-size: 18px;
+}
+
+.alert2 {
+  padding: 10px;
+  background-color: #f33333;
+  color: white;
+  width:70%;
+  margin: auto;
+  float:center;	
+  font-size: 18px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: red;
+}
+
+.alert2 {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  width:50%;
+  margin: auto;
+  float:center;	
+  font-size: 18px;
+  text-align:center;
+}
+
+.closebtn2 {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn2:hover {
+  color: red;
+}
+.filt{
+	display: flex;                 
+	justify-content: space-around; 
+	align-items: center;           
+	height: 100%;
+	background-color: #f0f0f0; 
+	margin: 10px;
+    padding: 15px;
+	font-weight: bold;
+}
+.flex-item {
+	background-color: #afe7f9;
+	font-weight: bold;
+	color: #000;                  
+	padding: 50px;                 
+	margin: 20px;                  
+	flex: 1;                      
+	text-align: center;           
+}
+.custom-select {
+  min-width: 350px;
+}
+
+.custom-select select {
+  appearance: none;
+  width: 45%;
+  font-size: 1.15rem;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.datepicker-toggle {
+  display: inline-block;
+  position: relative;
+  padding: 18px 10px;
+  height: 19px;
+}
+.datepicker-toggle-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;base64,...');
+}
+/******Entry******/
+.custom-select1 {
+  min-width: 350px;
+}
+
+.custom-select1 select {
+  appearance: none;
+  width: 70%;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.datepicker-toggle1 {
+  display: inline-block;
+  position: relative;
+  padding: 5px 5px;
+  height: 19px;
+}
+.datepicker-toggle1-button1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;base64,...');
+}
+#recap{
+	margin:10px 5px 25px 5px;
+}
+
+#searcform{
+	display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    margin: 10 auto; /* Full viewport height */
+	height: 100%;
+	text-align: center;
+}
+
+.flex-container {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-around; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    width: 50%; /* Container width */
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px; /* Padding around the container */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.flex-item {
+    background-color: #007bff; /* Blue background for items */
+    color: white; /* White text color */
+    padding: 15px; /* Padding inside each item */
+    border-radius: 5px; /* Rounded corners for items */
+    flex: 1; /* Make items grow equally */
+    margin: 0 10px; /* Margin between items */
+    text-align: center; /* Center text */
+}
+
+.rrt td input {
+    appearance: none;
+    /* width: 51%; */
+    font-size: 1.15rem;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+.rrt td, th {
+    text-align: left;
+    border: 1px solid #caced1;
+    padding: 5px 5px;
+    margin-top: 25px;
+}
+.rrt td input {
+	width: 94%;
+    font-size: 15px;
+}
+.rrt label {
+    font-family: arial, sans-serif;
+    font-weight: 5px solid black;
+    padding: 5px;
+}
+.rrt select{
+	Padding:5px 5px;
+}
+.rrt .button {
+  background-color: #0974c1;
+  border: none;
+  width:80px;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px 0px 17px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.rrr-ent .custom-select1 select {
+    appearance: none;
+    width: 75%;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #caced1;
+    border-radius: 0.25rem;
+    color: #000;
+    cursor: pointer;
+}
+.totalst{
+	display:flex;
+	background-color:green;
+	text-align: center;
+	Padding:5px 5px;
+	float:right;
+	margin-right: 33px;
+	font-weight: 900;
+}

@@ -1,0 +1,7 @@
+Atanu Banarjee
+
+CS Manage Engine Installation
+
+Remotely connected and setup user access
+
+Remotely connected and revoked the user access

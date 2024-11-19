@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading Dropdowns</title>
+    <style>
+        /* Basic styling */
+        body { font-family: Arial, sans-serif; }
+        .dropdown { margin: 10px; }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <label for="type">Type:</label>
+        <select id="type">
+            <option value="">Select a type</option>
+            <option value="fruits">Fruits</option>
+            <option value="vegetables">Vegetables</option>
+        </select>
+    </div>
+
+    <div class="dropdown" id="sub-type-container" style="display: none;">
+        <label for="sub-type">Sub-Type:</label>
+        <select id="sub-type">
+            <option value="">Select a sub-type</option>
+        </select>
+    </div>
+
+    <div class="dropdown" id="item-container" style="display: none;">
+        <label for="item">Item:</label>
+        <select id="item">
+            <option value="">Select an item</option>
+        </select>
+    </div>
+
+    <script>
+	const data = {
+		fruits: {
+			apples: ['Fuji', 'Gala', 'Honeycrisp'],
+			bananas: ['Cavendish', 'Red Banana'],
+			oranges: ['Navel', 'Blood Orange']
+		},
+		vegetables: {
+			carrots: ['Nantes', 'Imperator'],
+			broccoli: ['Calabrese', 'Sprouting'],
+			spinach: ['Savoy', 'Flat']
+		}
+	};
+
+	const typeSelect = document.getElementById('type');
+	const subTypeContainer = document.getElementById('sub-type-container');
+	const subTypeSelect = document.getElementById('sub-type');
+	const itemContainer = document.getElementById('item-container');
+	const itemSelect = document.getElementById('item');
+
+	// Event for Type selection
+	typeSelect.addEventListener('change', function() {
+		const selectedType = this.value;
+
+		// Clear sub-type and item dropdowns
+		subTypeSelect.innerHTML = '<option value="">Select a sub-type</option>';
+		itemSelect.innerHTML = '<option value="">Select an item</option>';
+		itemContainer.style.display = 'none'; // Hide item dropdown
+		subTypeContainer.style.display = 'none'; // Hide sub-type dropdown
+
+		if (selectedType) {
+			// Populate sub-type dropdown
+			Object.keys(data[selectedType]).forEach(subType => {
+				const option = document.createElement('option');
+				option.value = subType;
+				option.textContent = subType.charAt(0).toUpperCase() + subType.slice(1);
+				subTypeSelect.appendChild(option);
+			});
+			subTypeContainer.style.display = 'block'; // Show sub-type dropdown
+		}
+	});
+
+	// Event for Sub-Type selection
+	subTypeSelect.addEventListener('change', function() {
+		const selectedType = typeSelect.value;
+		const selectedSubType = this.value;
+
+		// Clear item dropdown
+		itemSelect.innerHTML = '<option value="">Select an item</option>';
+		itemContainer.style.display = 'none'; // Hide item dropdown
+
+		if (selectedSubType) {
+			// Populate item dropdown
+			data[selectedType][selectedSubType].forEach(item => {
+				const option = document.createElement('option');
+				option.value = item;
+				option.textContent = item;
+				itemSelect.appendChild(option);
+			});
+			itemContainer.style.display = 'block'; // Show item dropdown
+		}
+	});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Forms</title>
+    <style>
+        .form {
+            display: none; /* Hide both forms by default */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Select Form</h2>
+    <label>
+        <input type="radio" name="formToggle" value="form1" onclick="toggleForms()"> Form 1
+    </label>
+    <label>
+        <input type="radio" name="formToggle" value="form2" onclick="toggleForms()"> Form 2
+    </label>
+
+    <div id="form1" class="form">
+        <h3>Form 1</h3>
+        <form>
+            <!-- Form 1 fields here -->
+            <input type="text" placeholder="Field for Form 1">
+        </form>
+    </div>
+
+    <div id="form2" class="form">
+        <h3>Form 2</h3>
+        <form>
+            <!-- Form 2 fields here -->
+            <input type="text" placeholder="Field for Form 2">
+        </form>
+    </div>
+
+    <script>
+        function toggleForms() {
+            const form1 = document.getElementById('form1');
+            const form2 = document.getElementById('form2');
+
+            if (document.querySelector('input[name="formToggle"]:checked').value === 'form1') {
+                form1.style.display = 'block';
+                form2.style.display = 'none';
+            } else {
+                form1.style.display = 'none';
+                form2.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

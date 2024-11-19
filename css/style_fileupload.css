@@ -1,0 +1,175 @@
+﻿a{
+ color: #ff6600;	
+}
+
+
+/* Listing Table Starts Here ============================================================ */
+table.filetable {
+    border- : collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+.filetable thead{
+	border-bottom: 4px solid #ddd;
+}
+.filetable th, .filetable td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+	font-size: 13px;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+.content_options{
+	height: 40px;
+}
+.content_box{
+	float:left;
+	padding: 5px 0 5px 0;
+}
+.content_box input[type="text"]{
+	border-color: #ddd;
+    height: 21px;
+    border-width: 1px;
+    border-style: solid;
+	color: #73879C;
+	padding: 0 5px 0 5px;
+}
+.content_rightbox{
+	float: right;
+	padding: 5px 0 5px 0;
+}
+.content_rightbox select{
+	color: #73879C;
+    border-color: #ddd;
+	height: 21px;
+}
+
+/* Listing Table Ends Here ============================================================== */
+
+
+/* Error Table for NEFT/RTGS ============================================================ */
+.error_page_heading{
+	color:#990000;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+.error_table{
+	margin: 20px 0 0 0;
+}
+
+.error_table .error_heading{
+	text-transform: uppercase;
+	background-color: rgba(255, 0, 0, 0.1);
+	color: #990000;
+	font-weight: bold;
+}
+.error_table .heading {
+	border-bottom: 4px solid #ddd;
+}
+.error_table .message-box{
+	color: #990000;
+	background-color: rgba(255, 0, 0, 0.1);
+}
+
+
+/* Form Section Starts Here ============================================================= */
+input[type=file]{
+	border: 1px solid;
+    padding: 10px;
+    color: #73879C;
+	outline: 0;
+}
+.button_primary{
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+	display: inline-block;
+    padding: 6px 12px;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+	background-image: none;
+    border: 1px solid transparent;
+	border-radius: 3px;
+	outline: 0;
+}
+.button_primary:hover{
+	background-color: #275d8b;
+}
+.button_secondary{
+	color: #555;
+    background-color: #e6e6e6;
+	display: inline-block;
+    padding: 6px 12px;
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+	background-image: none;
+    border: 1px solid transparent;
+	border-radius: 3px;
+	outline: 0;
+}
+.button_secondary:hover{
+	background-color: #cccccc;
+}
+.alert{
+	padding: 6px;
+    margin: 5px 0 5px 0;
+	font-size: 11px;
+}
+.alert h3{
+	font-weight: 600;
+	font-size: 18px;
+}
+.alert h4{
+	font-weight: 600;
+	font-size: 14px;
+}
+.red{
+	background-color: rgba(255, 0, 0, 0.2);
+	color: #990000;
+	border: 1px solid #990000;
+}
+.green{
+	background-color: rgba(0, 255, 0, 0.2);
+	color: #006622;
+	border: 1px solid #009933;
+}
+.bigredalert{
+	padding: 6px;
+    margin: 5px 0 5px 0;
+	font-size: 11px;
+	background-color: rgba(255, 0, 0, 0.2);
+	color: #990000;
+	border: 1px solid #990000;
+    max-height: 200px;
+    overflow: auto;
+}
+.bigredalert h4{
+	font-weight: 600;
+	font-size: 14px;
+}
+.bigmessagebox{
+    margin: 5px 0 5px 0;
+	font-size: 12px;
+    max-height: 200px;
+    overflow: auto;
+}
+.bigmessagebox .title{
+	font-size: 13px;
+    font-weight: bold;	
+}
+
+
+/* Form Section Ends Here =============================================================== */
+

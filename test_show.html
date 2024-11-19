@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide TD Example</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Select an option:</h2>
+    <label>
+        <input type="radio" name="option" value="showTd1" checked onclick="toggleTds()"> Show TD 1
+    </label>
+    <label>
+        <input type="radio" name="option" value="showTd2" onclick="toggleTds()"> Show TD 2
+    </label>
+
+    <table border="1">
+        <tr>
+            <td id="td1">This is TD 1, visible by default.</td>
+            <td id="td2" class="hidden">This is TD 2, shown when the second radio button is selected.</td>
+        </tr>
+    </table>
+
+    <script>
+        function toggleTds() {
+            const td1 = document.getElementById('td1');
+            const td2 = document.getElementById('td2');
+
+            // Check which radio button is checked
+            if (document.querySelector('input[name="option"]:checked').value === 'showTd1') {
+                td1.classList.remove('hidden'); // Show TD 1
+                td2.classList.add('hidden');     // Hide TD 2
+            } else {
+                td1.classList.add('hidden');     // Hide TD 1
+                td2.classList.remove('hidden');   // Show TD 2
+            }
+        }
+    </script>
+</body>
+</html>

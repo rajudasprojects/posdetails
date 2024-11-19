@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Range Example</title>
+</head>
+<body>
+
+    <label for="typeSelect">Select Type:</label>
+    <select id="typeSelect">
+        <option value="">--Choose an option--</option>
+        <option value="dateRange">Date Range</option>
+        <option value="singleDate">Single Date</option>
+    </select>
+
+    <div id="dateInputs" style="display: none;">
+        <label for="fromDate">From Date:</label>
+        <input type="date" id="fromDate">
+
+        <label for="toDate">To Date:</label>
+        <input type="date" id="toDate">
+    </div>
+
+    <script>
+        const typeSelect = document.getElementById('typeSelect');
+        const dateInputs = document.getElementById('dateInputs');
+
+        typeSelect.addEventListener('change', function() {
+            if (this.value === 'dateRange') {
+                dateInputs.style.display = 'block';
+            } else {
+                dateInputs.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>

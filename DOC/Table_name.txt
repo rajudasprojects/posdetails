@@ -1,0 +1,32 @@
+POS Support Entry Table Name
+
+1. login_user_entry
+
+CREATE TABLE `login_user_entry` (          
+`user_name` varchar(50) DEFAULT NULL,    
+`user_pass` varchar(20) DEFAULT NULL,    
+`user_type` int(1) DEFAULT '0',          
+`login_ip` varchar(20) DEFAULT NULL,     
+`user_status` int(1) DEFAULT '0',        
+`temp_passwrd` varchar(50) DEFAULT NULL  
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+2.cash_office_support_details
+
+CREATE TABLE `cash_office_support_details` (        
+`report_date` date DEFAULT NULL,                  
+`report_time` time DEFAULT NULL,                  
+`support_required_by` varchar(100) DEFAULT NULL,  
+`cash_off_nm` varchar(100) DEFAULT NULL,          
+`pos_cash_office` varchar(100) DEFAULT NULL,      
+`support_details` varchar(100) DEFAULT NULL,      
+`support_provided_by` varchar(100) DEFAULT NULL,  
+`job_description` varchar(100) DEFAULT NULL,      
+`time_taken` time DEFAULT NULL,                   
+`pass_revoked_start_time` time DEFAULT NULL,      
+`pass_revoked_end_time` time DEFAULT NULL,        
+`pos_status` varchar(100) DEFAULT NULL            
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
+
+
+

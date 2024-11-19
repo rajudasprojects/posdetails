@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example</title>
+<style>
+  #myForm {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<input type="radio" id="yesRadio" name="choice" onclick="openForm();"> Yes
+
+<input type="radio" id="noRadio" name="choice" checked> No
+
+<form id="myForm">
+  <h2>This is the form</h2>
+  <input type="text" placeholder="Name">
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+function openForm(){
+
+	  const yesRadio = document.getElementById('yesRadio');
+	  const noRadio = document.getElementById('noRadio');
+	  const form = document.getElementById('myForm');
+
+	  yesRadio.addEventListener('change', function() {
+		if (this.checked) {
+		  form.style.display = 'block';
+		}
+	  });
+
+	  noRadio.addEventListener('change', function() {
+		if (this.checked) {
+		  form.style.display = 'none';
+		}
+	  });
+}
+	
+
+  
+</script>
+
+</body>
+</html>

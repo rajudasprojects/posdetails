@@ -1,0 +1,103 @@
+<?php
+
+if( ! defined("FRANCHISE_NAME"))
+	define("FRANCHISE_NAME","BESL");
+
+$service_providers = array(
+	"billdesk" => array(
+		"table_main" => "bedl_billdesk",
+		"table_main_price_column" => "received_amount",
+		"table_main_kno_column" => "kno",
+		"table_main_tranid_column" => "transaction_no",
+		"table_main_coll_date" => "collection_timestamp",
+		"table_main_payment_hit_date" => "server_date_time",
+		"table_main_status_column" => "status_update",
+		"table_main_accno_column" => "account_no",
+		"table_summary" => "bedl_billdesk_summary",
+		"table_hcl" => "bedl_billdesk_online",
+		"table_hcl_price_column" => "received_amount",
+		"table_hcl_coll_date" => "collection_timestamp",
+		"table_hcl_filter_col" => "is_ebpp",
+		"table_hcl_filter_val" => "0",
+		"it_payment_mode" => "8",
+		"is_live" => "yes",
+		"is_sms_live" => "no"
+	),
+	"neft" => array(
+		"table_main" => "bedl_neftrtgs",
+		"table_main_price_column" => "amount_paid",
+		"table_main_kno_column" => "kno",
+		"table_main_tranid_column" => "tran_id",
+		"table_main_coll_date" => "coll_date",
+		"table_main_payment_hit_date" => "server_date",
+		"table_main_status_column" => "status_update",
+		"table_main_accno_column" => "account_no",
+		"table_summary" => "bedl_neftrtgs_summary",
+		"table_hcl" => "bedl_neftrtgs_online",
+		"table_hcl_price_column" => "received_amount",
+		"table_hcl_coll_date" => "collection_date",
+		"table_hcl_filter_col" => "",
+		"table_hcl_filter_val" => "",
+		"it_payment_mode" => "12",
+		"is_live" => "yes",
+		"is_sms_live" => "no"
+	),
+	"paytm" => array(
+		"table_main" => "bedl_paytm",
+		"table_main_price_column" => "amount_paid",
+		"table_main_kno_column" => "knumber",
+		"table_main_tranid_column" => "unique_tranid",
+		"table_main_coll_date" => "coll_date",
+		"table_main_payment_hit_date" => "server_date",
+		"table_main_status_column" => "status_update",
+		"table_main_accno_column" => "bill_account_no",
+		"table_summary" => "bedl_paytm_summary",
+		"table_hcl" => "bedl_paytm_online",
+		"table_hcl_price_column" => "received_amount",
+		"table_hcl_coll_date" => "collection_date",
+		"table_hcl_filter_col" => "",
+		"table_hcl_filter_val" => "",
+		"it_payment_mode" => "9",
+		"is_live" => "yes",
+		"is_sms_live" => "no"
+	),
+	"emitra" => array(
+		"table_main" => "bharatpur_emitra",
+		"table_main_price_column" => "amount_paid",
+		"table_main_kno_column" => "knumber",
+		"table_main_tranid_column" => "unique_tranid",
+		"table_main_coll_date" => "coll_date",
+		"table_main_payment_hit_date" => "server_date",
+		"table_main_status_column" => "status_update",
+		"table_main_accno_column" => "bill_account_no",
+		"table_summary" => "bharatpur_emitra_summary",
+		"table_hcl" => "bharatpur_emitra_online",
+		"table_hcl_price_column" => "received_amount",
+		"table_hcl_coll_date" => "collection_date",
+		"table_hcl_filter_col" => "",
+		"table_hcl_filter_val" => "",
+		"it_payment_mode" => "11",
+		"is_live" => "yes",
+		"is_sms_live" => "no"
+	),
+	"ebpp" => array(
+		"table_main" => "bharatpur_ebpp",
+		"table_main_price_column" => "received_amount",
+		"table_main_kno_column" => "kno",
+		"table_main_tranid_column" => "transaction_no",
+		"table_main_coll_date" => "collection_timestamp",
+		"table_main_payment_hit_date" => "server_date_time",
+		"table_main_status_column" => "status_update",
+		"table_main_accno_column" => "account_no",
+		"table_summary" => "bharatpur_ebpp_summary",
+		"table_hcl" => "bedl_billdesk_online",
+		"table_hcl_price_column" => "received_amount",
+		"table_hcl_coll_date" => "collection_timestamp",
+		"table_hcl_filter_col" => "is_ebpp",
+		"table_hcl_filter_val" => "1",
+		"it_payment_mode" => "8",
+		"is_live" => "yes",
+		"is_sms_live" => "no"
+	)
+);
+?>
